@@ -1,0 +1,78 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+.grid-section {
+  padding: 64px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: -ms-grid;
+  display: flex;
+  /* grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3); */
+  -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.grid a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.grid li {
+  margin: 0;
+  padding: 24px;
+  margin-left: 8%;
+  overflow: hidden;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 14px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 14px 0 rgba(0, 0, 0, 0.1);
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.grid li img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.grid li span {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.grid .description {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1em;
+}

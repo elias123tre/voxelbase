@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VoxelBase - Data storage for the future</title>
+  </head>
+  <body>
+    <header>
+      <a
+        class="logo unform-link"
+        href="https://web.floreteng.se"
+        title="VoxelBase - Data storage for the future"
+      >
+        <img
+          src="img/logo-alt-bright-voxelbase.png"
+          alt="VoxelBase Logo"
+        />VoxelBase
+      </a>
+      <div class="menu">
+        <ul class="navigation">
+          <li>
+            <a class="unform-link" href="https://web.floreteng.se">Home</a>
+          </li>
+          <li><a class="unform-link" href="products">Products</a></li>
+          <li><a class="unform-link" href="possibilities">Possibilities</a></li>
+          <li><a class="unform-link" href="partners">Partners</a></li>
+        </ul>
+        <a class="unform-link button" href="products#comparison">Buy now</a>
+      </div>
+    </header>
+    <section class="product-section">
+      <div class="package-descriptions">
+        <h1 id="personal">Personal preservation</h1>
+        <p>
+          This is the basic package for getting up and running with VoxelBase™
+          and archiving data. This package is mainly focused on personal use and
+          is meant to be as easy as possible to get going with. It includes
+          enough storage to safely backup your most valuable data, such as
+          emails, documents and photos.
+        </p>
+        <h1 id="small-team">Data archiving for small teams</h1>
+        <p>
+          If you are managing documents and important data for a small team this
+          will be the right package for you. The superior storage space and
+          backup rate will help you get up and running as fast as possible and
+          allows for storage of the teams most valueable data for up to 500
+          years.
+        </p>
+        <h1 id="database">Database migration</h1>
+        <p>
+          This option is the enterprise solution for data archiving. The package
+          allows for up to three terrabytes of data to be stored and has the
+          best archival performance on the market. This package uses
+          leading-edge technology to archive your whole database inside the most
+          toughest glass ever greated.
+        </p>
+      </div>
+      <figure class="side-image">
+        <img
+          src="img/database-platter-voxelbase.jpg"
+          alt="The largest silica platter for sale"
+        />
+        <figcaption>
+          A quartz-reinforced glass platter available for the database package
+        </figcaption>
+      </figure>
+    </section>
+    <section class="comparison-section">
+      <h1 id="comparison" style="text-align: center">
+        Available implementations
+      </h1>
+      <div class="table">
+        <div class="table-titles">
+          <div class="table-header" style="visibility: hidden">
+            <div class="row">Hidden</div>
+          </div>
+          <div class="table-body">
+            <div class="row">Capacity</div>
+            <div class="row">Backup rate</div>
+            <div class="row">Material</div>
+            <div class="row">Longevity</div>
+            <div class="row">Base price</div>
+          </div>
+        </div>
+
+        <div class="table-values-wrapper">
+          <div class="table-values">
+            <div class="table-header">
+              <div class="row">Personal</div>
+            </div>
+            <div class="table-body">
+              <div class="row">10 GB</div>
+              <div class="row">100 Mbps</div>
+              <div class="row">Silica Glass</div>
+              <div class="row">100 Years</div>
+              <div class="row">$500</div>
+            </div>
+          </div>
+          <div class="table-values">
+            <div class="table-header">
+              <div class="row">Small team</div>
+            </div>
+            <div class="table-body">
+              <div class="row">100 GB</div>
+              <div class="row">250 Mbps</div>
+              <div class="row">Silica Glass</div>
+              <div class="row">&lt; 500 Years</div>
+              <div class="row">$1500</div>
+            </div>
+          </div>
+          <div class="table-values">
+            <div class="table-header">
+              <div class="row">Database</div>
+            </div>
+            <div class="table-body">
+              <div class="row">3000 GB</div>
+              <div class="row">1000 Mbps</div>
+              <div class="row">Quartz-reinforced Glass</div>
+              <div class="row">~ 1000 Years</div>
+              <div class="row">$5000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="buy-section">
+      <h1 style="margin-bottom: 1em">Order your solution</h1>
+      <form class="pane" onsubmit="return false">
+        <label class="textfield">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder=" "
+          />
+          <span>Email</span>
+        </label>
+        <label class="textfield">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            pattern="(?:[A-Z]+[a-z]*\s?\b){2,}"
+            placeholder=" "
+          />
+          <span>Name</span>
+        </label>
+        <select name="use" id="use" required onchange="changeColor()">
+          <option selected disabled hidden value="">Use case</option>
+          <option value="personal">Personal</option>
+          <option value="small-team">Small team</option>
+          <option value="database">Database</option>
+        </select>
+        <output>Estimated price: $<span id="cost"></span></output>
+        <button type="submit">Request offer</button>
+      </form>
+    </section>
+    <footer>
+      <span style="white-space: nowrap">
+        © 2019 Elias Floreteng
+      </span>
+      <a href="mailto:elias@floreteng.se" class="unform-link icon">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
+          />
+        </svg>
+      </a>
+    </footer>
+
+    <link
+      rel="shortcut icon"
+      href="img/logo-alt-bright-voxelbase.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700%7CRoboto:300,400,500,700%7CRoboto+Slab:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/form.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/table.css"
+    />
+    <script src="js/main.js"></script>
+  </body>
+</html>
